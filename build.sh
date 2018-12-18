@@ -100,11 +100,10 @@ if [ ! -d src/external/libspotify-12.1.51-Linux-x86_64-release ]; then
         exit
       fi
     popd
-  else	
-    pushd src/external/
-      tar xfz libspotify-12.1.51-Linux-x86_64-release.tar.gz
-    popd
   fi
+  pushd src/external/
+    tar xfz libspotify-12.1.51-Linux-x86_64-release.tar.gz
+  popd
 fi
 
 if [ ! -f lib/libspotify.so.12.1.51 ]; then
